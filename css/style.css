@@ -1,0 +1,286 @@
+:root{
+    --primaryBG: rgb(31, 113, 180);
+    --LightBG: rgb(177, 177, 177);
+    --greytext: rgb(240, 238, 238);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}   
+
+body{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--LightBG);
+}
+
+.main-wrapper{
+    /* background-color: white; */
+    width: 100%;
+    /* margin: 0px auto;  */
+    margin-top: 20px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+nav{
+    background-color: var(--primaryBG);
+    width: 100%;
+    height: 60px;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5px;
+}
+
+nav .rightTopbar{
+    display: flex;
+    align-items: center;
+}
+
+nav .rightTopbar  .menu{
+    margin-right: 20px;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    margin-right: 20px;
+    list-style-type: none;
+}
+
+nav .menu a{
+    color: #fff;
+    text-decoration: none;
+}
+
+nav  .menu a:hover{
+    color: rgb(183, 199, 253);
+}
+
+nav .profile{
+    display: flex;
+    align-items: center;
+}
+
+nav .profile h2{
+    font-size: 18px;
+}
+
+ .profileimage{
+    height: 35px;
+    border:2px solid #f4f4f4;
+    border-radius: 100%;
+    width: 35px;
+    margin: 0px 10px;
+
+}
+
+nav .profilelink{
+    text-decoration: none;
+    color: #fff;
+}
+
+.mobilemenu{
+    height: 700px;
+    width: 300px;
+    visibility: visible;
+    display: flex;
+    background-color: red;
+}
+
+.mobilemenuicon{
+    visibility: hidden;
+    display: none;
+
+}
+
+.chartbar{
+    width: 100px;
+    height: 50px;
+    font-size: 80px;
+    color: var(--primaryBG);
+    position: fixed;
+    bottom: 20px;
+    right:20px;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    align-items: start;
+    justify-content: start;
+    /* justify-content: space-between; */
+    width: 20%;
+    height: 100%;
+    color: var(--greytext);
+    margin-right: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+
+}
+
+.inner-aside {
+    height: 500px;
+    /* background-color: red; */
+}
+
+aside li{
+    list-style-type: none;
+    display: flex;
+    padding: 10px 0px;
+    align-items: center;
+}
+
+aside li:hover{
+    background-color: var(--LightBG);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    color: var(--primaryBG);
+}
+
+aside li .menu-icon{
+    font-size: 18px;
+    margin: 0px 10px;
+}
+
+aside > li .menu-label{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+aside > .sidefooter{
+     font-size: 12px;
+     padding: 10px;
+}
+
+main{
+    width: 80%;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* flex-grow: 1; */
+    height: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+.titleBar{
+    
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titleBar .left{
+    display: flex;
+    align-items: center;
+}
+
+.titleBar .right{
+    display: flex;
+    align-items: center;
+}
+
+.titleBar.label{
+    font-size: 12px;
+}
+
+.labelicon{
+    font-size: 30px;
+    color: coral;
+    margin: 0px 5px;
+}
+
+main .topsellers{
+    border-bottom: 1px rgb(192, 191, 191) dashed;
+    margin-bottom: 20px;
+}
+
+ .content{
+    max-width: 100%;
+    display: grid;
+    padding: 10px;
+
+}
+ .profilecard{
+    display: flex;
+    align-items: center;
+    width: auto;
+    flex-grow: 1;
+    margin: 10px;
+}
+
+main .topSellers .Content .profilecard img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin-right: 5px;
+}
+
+main .topSellers .Content .profilecard h2{
+    font-size: 14px;
+}
+
+main .topSellers .Content .profilecard p{
+    font-size: 12px;
+}
+
+@media (max-width: 600px) {
+    nav .menu{
+        display: none;
+    }
+
+    nav .profile{
+        display: none;
+    
+    }
+}
+
+.mobilemenuicon{
+    font-size: 40px;
+    visibility: visible;
+    margin-right: 10px;
+
+}
+
+.mobilemenu{
+    background-color: var(--primaryBG);
+    width: 70%;
+    height: 100vh;
+    visibility: hidden;
+    padding-top: 10px;
+    top: 0%;
+    left: 0px;
+    position: fixed;
+    padding-left: 5px;
+}
+
+.mobilemenu li{
+    margin-bottom: 10px;
+    padding: 5px;
+    border-bottom: #f4f4f4 1px dashed;
+    list-style-type: none;
+
+}
+
+.mobilemenu a{
+    text-decoration: none;
+    color: white 
+}
+
+.mobilemenu a:hover{
+    color: rgb(151, 151, 151);
+}
+    
+.logo{
+    font-size: 9px;
+}
+
